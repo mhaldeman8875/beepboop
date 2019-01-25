@@ -11,7 +11,19 @@
 //         - input example: 10
 //         - output example: beep, boop, 2, [text], 4, 5, [text], 7, 8, [text], beep
 
+var userArray = [];
+var outputArray = [];
 
+var bleepBloop = function(number) {
+
+    var name = $("input#name").val();
+    var countTo = parseInt($("input#number").val());
+
+    $("#results").empty();
+
+    
+    }       
+}
 $(document).ready(function(){
     $("#formOne").submit(function(event){
         
