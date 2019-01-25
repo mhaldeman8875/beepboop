@@ -28,13 +28,14 @@ var bleepBloop = function(countTo) {
     };
 
     userArray.forEach(function(number) {
-        
+        var zero = number.search(/0/gm);
+        var one = number.search(/1/gm);
         
         if((number%3) === 0 && number!=0) {
          $("results#output2").show();
-        } else if (number.search(/1/gm) >= 0) {
+        } else if (one >= 0) {
     
-        } else if (number.search(/0/gm) >= 0) {
+        } else if (zero >= 0) {
     
         }
         resultArray.push(number);
