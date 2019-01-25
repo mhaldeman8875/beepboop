@@ -11,21 +11,38 @@
 //         - input example: 10
 //         - output example: beep, boop, 2, [text], 4, 5, [text], 7, 8, [text], beep
 
-var bleepBloop = function(number) {
+var bleepBloop = function(countTo) {
 
     var name = $("input#name").val();
-    var countTo = parseInt($("input#number").val());
+    var userArray = [];
+    var resultArray = [];
 
-    if((number%3) === 0 && number!=0) {
-         
-    } else if (number.search(/1/gm) >= 0) {
-
-    } else if (number.search(/0/gm) >= 0) {
-        
+    resultArrayLength = resultArray.length;
+    if (resultArrayLength > 0) {
+        resultArray = [];
     }
 
-          
-}
+    for (i = 0; i <= countTo; i++) {
+        i = i.toString();
+        userArray.push(i);
+    };
+
+    userArray.forEach(function(number) {
+        
+        
+        if((number%3) === 0 && number!=0) {
+         $("results#output2").show();
+        } else if (number.search(/1/gm) >= 0) {
+    
+        } else if (number.search(/0/gm) >= 0) {
+    
+        }
+        resultArray.push(number);
+
+
+   //var countTo = parseInt($("input#number").val());
+
+    
 $(document).ready(function(){
     $("#formOne").submit(function(event){
         
@@ -41,4 +58,3 @@ $(document).ready(function(){
     });
   
   });
- 
