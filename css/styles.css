@@ -1,0 +1,52 @@
+#results {
+    display: none;
+}
+#result {
+    color: black;
+}
+
+.col-md-7 {
+    padding: 5%;
+}
+.robo1 {
+    width: 400px;
+    padding-top: 30px;
+}
+.robo2 {
+    display: none;
+    width: 400px;
+}
+
+body {
+    font-family: '8BITWONDERNominal';
+    font-weight: normal;
+    font-style: normal;
+    color: #21B8FF;
+    background-image: url("http://www.sompaisoscatalans.cat/simage/54/549562/pixel-art-wallpaper.png");
+ } 
+
+ h2#init {
+     color: black;
+ }
+
+
+ .container {
+     background-color: white;
+     height: 100vh;
+     overflow: auto;
+ }
+
+ .jumbotron {
+     background-color: rgb(98, 209, 107);
+     color: white;
+ }
+
+ #formOne {
+     padding-right: 30%;
+ }
+
+ .btn {
+     font-size: 200%;
+     background-color: #21B8FF;
+     color: white;
+ }

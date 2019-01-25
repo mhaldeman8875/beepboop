@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
-  <script src="js/scripts.js"></script>
-  <title>Beep Boop</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css"/> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>    
+    <script src="js/scripts.js"></script>
+    <title>Bleep Bloop</title>
 </head>
-  <body>
+<body>
     <div class="container">
-      <h1></h1>
-
-      <form id="formOne">
-        <div class="form-group">
-          <label for="sentence"></label>
-          <input id="sentence" type="text">
+        <div class="jumbotron">
+            <h2>01100010 01101100 01100101 01100101 01110000 00100000 01100010 01101100 01101111 01101111 01110000</h2>  
+            <!-- <blockquote class="blockquote text-right">
+                <p id="txt">The most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language when your job inevitably does.</p>
+                <footer class="blockquote-footer">Michael Kaiser-Nyman <cite title="Source Title">Epicodus</cite></footer>
+            </blockquote> -->
         </div>
-
-        <button type="submit" class="btn"></button>
-      </form>
-
-      <div id="translation">
-          
-      </div>
+        <div class="row" id="page">
+            <div class="col-md-7">
+                <div id="sysinit">
+                    <h2 id="init">> System Initilization</h2>
+                    <p class="prompt">meet the Intelligent Number Detector and Inspector, aka INDI. To use INDI, do the following: <br><br>_please input your name<br>_please input a number<br>_click "launch" button</p>
+                </div>
+                <div id="results">
+                    <h2 id="result" class="animated fadeInDown">> INDI Response_</h2>
+                        <p id ="output" class="animated bounceInRight delay-1s">Hello <span class="name"></span>
+                        <p id="output1" class="animated bounceInRight delay-2s"></p>
+                        <p id="output2" class="animated bounceInRight delay-2s">ERROR! UNABLE TO PROCESS REQUEST</p>
+                </div>
+                <div>
+                    <form id="formOne">
+                            <div class="form-group">
+                                <label for="name"><br><br><br><br><br>User Name:</label>
+                                <input id="name" class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="number"><br>User Input:</label>
+                                <input id="number" class="form-control" type="text">
+                            </div>
+                            <button type="submit" class="btn">Launch</button> <br><br><br>
+                        </form>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="img/robo1.jpg" class="robo1" id="robo1">
+                <img src="img/robo2.jpg" class="robo2" id="robo2">
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
