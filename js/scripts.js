@@ -12,4 +12,19 @@
 //         - output example: beep, boop, 2, [text], 4, 5, [text], 7, 8, [text], beep
 
 
+$(document).ready(function(){
+    $("#formOne").submit(function(event){
+        
+
+        $(".name").text(name);
+        $("#results").show();
+        $("#sysinit").hide();
+        $("#robo2").fadeIn();
+        $("#robo1").hide();
+
+
+      event.preventDefault();
+    });
+  
+  });
  
