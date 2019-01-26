@@ -40,6 +40,8 @@ OR
 * GitBash
 * JavaScript
 * jQuery
+* Adobe Photoshop
+* Bootstrap
 
 ## Support and contact details
 
