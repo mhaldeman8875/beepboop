@@ -2,6 +2,12 @@
     display: none;
 }
 
+p.animated {
+    animation-duration: 3s;
+}
+img.animated {
+    animation-duration: 2s;
+}
 #result {
     color: black;
     padding-bottom: 2%;
@@ -10,7 +16,7 @@
 .col-md-7 {
     padding: 5%;
 }
-.robo1 {
+#robo1 {
     width: 400px;
     padding-top: 30px;
 }

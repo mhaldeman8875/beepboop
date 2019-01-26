@@ -60,8 +60,7 @@ $(document).ready(function(){
         
     });
 
-    $("$back").tryAgain(function() {
-        location.reload();
-    });
-  
+    $("button#back").click(function(){
+        location.reload(); //refreshes the page
+      });
   });
