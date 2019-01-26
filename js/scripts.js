@@ -12,7 +12,7 @@
 //         - output example: beep, boop, 2, [text], 4, 5, [text], 7, 8, [text], beep
 
 
-
+//Business Logic:
 var bleepBloop = function(number) {
     
     var numberArray = [];
@@ -41,8 +41,8 @@ var bleepBloop = function(number) {
     return numberList;        
 };
 
-    
-$(document).ready(function(){
+//UI Logic:    
+$(document).ready(function() {
     $("#container").submit(function(event){
 
         event.preventDefault();
