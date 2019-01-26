@@ -11,6 +11,7 @@ A website created HTML, Javascript, and CSS where a user can submit their name a
 
 ### Specs
 Specs in ascending order of priority:
+
     * if the number inputted is divisible by 3, the program will return an error response using their name;
         - input: 30
         - output: Sorry, [name] but due to technical difficulties your input could not be computed
