@@ -12,27 +12,17 @@
 //         - output example: beep, boop, 2, [text], 4, 5, [text], 7, 8, [text], beep
 
 
-var userArray = [];
-var resultArray = [];
+
 
 var bleepBloop = function(countTo) {
+    var userArray = [];
+    var numberArray = [];
 
-    
-event.preventDefault();
-
-    var userName = $("input#name").val();
-
-    resultArrayLength = resultArray.length;
-    if (resultArrayLength > 0) {
-        resultArray = [];
-    }
-
-    for (i = 0; i <= countTo; i++) {
-        i = i.toString();
-        userArray.push(i);
+    for (var i = 0; i <= countTo; i++) {
+        userArray.push(i.toString());
     };
 
-    userArray.forEach(function(number){
+    numberArray.forEach(function(number){
         var zero = number.search(/0/gm);
         var one = number.search(/1/gm);
         
