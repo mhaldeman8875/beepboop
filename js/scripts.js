@@ -11,11 +11,16 @@
 //         - input example: 10
 //         - output example: beep, boop, 2, [text], 4, 5, [text], 7, 8, [text], beep
 
+
+var userArray = [];
+var resultArray = [];
+
 var bleepBloop = function(countTo) {
 
-    var name = $("input#name").val();
-    var userArray = [];
-    var resultArray = [];
+    
+event.preventDefault();
+
+    var userName = $("input#name").val();
 
     resultArrayLength = resultArray.length;
     if (resultArrayLength > 0) {
@@ -27,35 +32,63 @@ var bleepBloop = function(countTo) {
         userArray.push(i);
     };
 
-    userArray.forEach(function(number) {
+    userArray.forEach(function(number){
         var zero = number.search(/0/gm);
         var one = number.search(/1/gm);
         
-        if((number%3) === 0 && number!=0) {
-         $("results#output2").show();
+        if ((number%3) === 0 && number!=0) {
+            switch(number) {
+             default:
+                number = userName + ", FATAL ERROR CANNOT COMPUTE, "
+                break; 
+            }
         } else if (one >= 0) {
+            switch(one) {
+                default:
+                    number = "bloop";
+                break;
+            }
     
         } else if (zero >= 0) {
-    
-        }
+            switch(zero) {
+                default:
+                    number = "bleep";
+                break;
+            }
+        } else { }
         resultArray.push(number);
+        
+    });
 
-
-   //var countTo = parseInt($("input#number").val());
-
+    resultArray.push("The deveopers were slacking when they wrote me so I'm glitchy...");
+    resultArrayJoined = resultArray.join(" ");
+}
     
 $(document).ready(function(){
-    $("#formOne").submit(function(event){
-        
+    $("#container").submit(function(event){
 
-        $(".name").text(name);
-        $("#results").show();
+        event.preventDefault();
+        var userName = $("input#name").val();
+        var numberInput = parseInt($("input#number").val());
+
+        $("#result").show();
         $("#sysinit").hide();
         $("#robo2").fadeIn();
         $("#robo1").hide();
 
+        bleepBloop(numberInput);
+        if (numberInput >=150) {
+            
+            $("#output").text("whoops too big");
+            
+        } else {
+            $("#output").text(resultArrayJoined);
+        }
+        
+    });
 
-      event.preventDefault();
+    $("#tryAgain").click(function() {
+        location.reload();
     });
   
   });

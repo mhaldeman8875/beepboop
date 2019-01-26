@@ -1,8 +1,11 @@
-#results {
-    display: none;
-}
+
 #result {
     color: black;
+    display: none;
+}
+
+#robotOutput {
+    display: none;
 }
 
 .col-md-7 {

@@ -10,7 +10,7 @@
     <title>Bleep Bloop</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="jumbotron">
             <h2>01100010 01101100 01100101 01100101 01110000 00100000 01100010 01101100 01101111 01101111 01110000</h2>  
             <!-- <blockquote class="blockquote text-right">
@@ -26,9 +26,7 @@
                 </div>
                 <div id="results">
                     <h2 id="result" class="animated fadeInDown">> INDI Response_</h2>
-                        <p id ="output1" class="animated bounceInRight delay-1s">Hello <span class="name"></span>
-                        <p id="output1" class="animated bounceInRight delay-2s"></p>
-                        <p id="output2" class="animated bounceInRight delay-2s">ERROR! UNABLE TO PROCESS REQUEST</p>
+                    <p id ="robotOutput" class="animated bounceInRight delay-1s"><span id="output"></span></p>
                 </div>
                 <div>
                     <form id="formOne">
@@ -40,7 +38,7 @@
                                 <label for="number"><br>User Input:</label>
                                 <input id="number" class="form-control" type="text">
                             </div>
-                            <button type="submit" class="btn">Launch</button> <br><br><br>
+                            <button type="submit" class="btn">Launch</button><br><br><button type="tryAgain" class="btn">Try Again</button> <br><br><br>
                         </form>
                 </div>
             </div>
