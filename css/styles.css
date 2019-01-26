@@ -1,11 +1,9 @@
-
-#result {
-    color: black;
+.results {
     display: none;
 }
 
-#robotOutput {
-    display: none;
+#result {
+    color: black;
 }
 
 .col-md-7 {
