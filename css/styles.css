@@ -4,6 +4,7 @@
 
 #result {
     color: black;
+    padding-bottom: 2%;
 }
 
 .col-md-7 {
@@ -13,7 +14,7 @@
     width: 400px;
     padding-top: 30px;
 }
-.robo2 {
+#robo2 {
     display: none;
     width: 400px;
 }
@@ -51,3 +52,27 @@ body {
      background-color: #21B8FF;
      color: white;
  }
+
+ #robotOutput {
+    width: 90%;
+    margin: auto;
+    border: 4px solid #21B8FF;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    background-color: #21B8FF;
+    color: white;
+    position: relative;
+  }
+
+#robotOutput:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #21B8FF;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    right: -23px;
+  }

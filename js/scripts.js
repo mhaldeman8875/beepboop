@@ -13,28 +13,31 @@
 
 
 
-var bleepBloop = function(countTo) {
-    var numberList = "";
+var bleepBloop = function(number) {
+    
     var numberArray = [];
+    var numberList = "";
 
-    for (var i = 0; i <= countTo; i++) {
+    for (var i = 0; i <= number; i++) {
         numberArray.push(i.toString());
     } 
 
     numberList += "beep";
-    userName = $("input#name").val;
+    userName = $("#name").val();
+
 
     for (var index =1; index < numberArray.length; index++) {
         if (index%3 === 0) {
-            numberList += "I'm sorry, " + userName + " my creators cut corners and I am broken as a result ";
+            numberList += " ERROR! I'm sorry " + userName + ", I'm afraid I can't do that. ";
         } else if (numberArray[index].includes("1")) {
-           numberList += " bloop" + "";
+           numberList += " bloop " + "";
         } else if (numberArray[index].includes("0")) {
             numberList += " bleep ";
         } else { 
-            
+            numberList += index + ", ";
         }
     }
+    
     return numberList;        
 };
 
@@ -49,15 +52,15 @@ $(document).ready(function(){
         $("#robo2").fadeIn();
         $("#robo1").hide();
 
-        var countTo = parseInt($("input#number").val());
+        var number = parseInt($("input#number").val());
         
-        var result = bleepBloop(countTo);
+        var result = bleepBloop(number);
         
-        $("#robotOutput").append(result);
+        $("#robotOutput").text(result);
         
     });
 
-    $("#tryAgain").click(function() {
+    $("$back").tryAgain(function() {
         location.reload();
     });
   
